@@ -1,0 +1,551 @@
+body{
+  	margin: 0;
+  	padding: 0;
+  	background-image: url("../poster/star wars.jpg");
+}
+.button_filmi{
+	width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button{
+	width: 87px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 10%;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background: seagreen;
+    opacity: 0.5;
+}
+a{
+	text-decoration: none;
+}
+@font-face{
+  	font-family: roboto-geo-upper;
+  	src: url(../fonts/ROBOTO__GEO_MT-WEBFONT.ttf);
+}
+@font-face{
+	font-family: ROBOTO__GEO_NUS-WEBFONT;
+	src: url(../fonts/ROBOTO__GEO_NUS-WEBFONT.ttf);
+}
+@font-face{
+	font-family: Roboto-Bold;
+	src: url(../fonts/Roboto-Bold.ttf);
+}
+.trailer_background{
+	background: rgba(17,17,17,.9);
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	top:0;
+    left:0;
+    position:fixed;
+    padding:0;
+    margin:0;
+}
+.main{
+	background-color: #111;
+	width: 1140px;
+	height: 575px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	top: 50px;
+}
+.display_none{
+	display: none;
+}
+.video{
+	width: 742px;
+	height: 515px;
+	background-color: black;
+	margin-top: 11px;
+}
+.video_im{
+	width: 742px;
+	height: 515px;
+}
+.trailer_details{
+	width: 360px;
+	height: 575px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+.trailer_close{
+	width: 330px;
+    background-color: #111;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 19px;
+}
+.trailer_close svg:hover{
+	cursor: pointer;
+	-webkit-transition: opacity .1s;
+    -o-transition: opacity .1s;
+    -moz-transition: opacity .1s;
+    transition: opacity .1s;
+    animation: roll 1s infinite;
+  	transform: rotate(360deg) scale(2);
+/*    animation: fade-in .3s forwards;*/
+}
+@keyframes roll {
+  	0% {
+    	transform: rotate(0);
+  	}
+  	100% {
+    	transform: rotate(360deg);
+  	}
+}
+.trailer_list_items{
+	width: 360px;
+	height: 247px;
+	background-color: #111;
+	display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.list_item_details{
+	width: 330px;
+	height: 175px;
+	margin-top: 10px;
+	display: flex;
+}
+.trailer_details_in{
+	width: 230px;
+	height: 175px;
+	background-color: #111;
+	display: flex;
+	flex-direction: column;
+}
+.poster{
+	width: 100px;
+	height: 175px;
+}
+.poster img{
+	width: 100px;
+	height: 156px;
+}
+.trailer-titles span{
+	font-family: roboto-geo-upper;
+	color: #fff;
+    font-size: 18px;
+    line-height: 1.1;
+	text-transform: uppercase;
+}
+.trailer-titles{
+	display: flex;
+    flex-direction: column;
+}
+.trailer-titles a{
+	margin-bottom: 10px;
+	text-decoration: none;
+}
+.year-duration{
+	font-family: roboto-geo-upper,sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #999;
+    font-size: 13px;
+    line-height: 1.1;
+    margin-bottom: 11px;
+}
+.year-duration--separator{
+	display: inline-block;
+    width: 1px;
+    height: 11px;
+    background: #fff;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+.trailer-rating{
+	display: flex;
+    flex-direction: column;
+}
+.imdb-rating{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100px;
+	height: 30px;
+}
+.imdb-rating-score{
+	font-family: roboto-bold,sans-serif;
+	font-size: 15px;
+    color: #e2e2e2;
+}
+.imdb-rating-voters{
+	font-family: roboto,sans-serif;
+	font-size: 12px;
+    color: #bdbdbd;
+}
+.imdb-rating a{
+	display: flex;
+}
+.star-rating{
+	display: flex;
+	height: 40px;
+    align-items: center;
+}
+.full{
+	position: relative;
+    right: 116px;
+}
+.imovies-rating{
+	display: flex;
+	align-items: center;
+}
+.star-rating svg {
+    pointer-events: none;
+    width: 20px;
+    height: 20px;
+}
+.imovies-rating span{
+	position: relative;
+	right: 13px;
+}
+.animation_icons{
+	width: 330px;
+	height: 52px;
+	background-color: #111;
+	display: flex;
+}
+.animation_icons_in{
+	width: 280px;
+	height: 52px;
+	background-color: #111;
+	/*align-items: center;*/
+	display: flex;
+	justify-content: space-between;
+}
+.rcheulebi{
+	width: 118px;
+    height: 25px;
+    font-size: 12px;
+    font-family: roboto-geo-upper;
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    bottom: 355px;
+    right: 270px;
+    background-color: rgba(29, 29, 29, 1);
+    display: none;
+    text-align: center;
+    padding-top: 7px;
+    transition-duration: 0.6s;
+    opacity: 0.9;
+}
+.siashi_damateba{
+    width: 116px;
+    height: 25px;
+    font-size: 12px;
+    font-family: roboto-geo-upper;
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    bottom: 355px;
+    right: 30px;
+    background-color: rgba(29, 29, 29, 1);
+    text-align: center;
+    padding-top: 6px;
+    transition-duration: 0.6s;
+    display: none;
+}
+.gamowera{
+    width: 77px;
+    height: 25px;
+    font-size: 12px;
+    font-family: roboto-geo-upper;
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    bottom: 355px;
+    right: 111px;
+    background-color: rgba(29, 29, 29, 1);
+    text-align: center;
+    padding-top: 6px;
+    transition-duration: 0.6s;
+    display: none;
+}
+.nanaxi{
+	width: 88px;
+    height: 25px;
+    font-size: 12px;
+    font-family: roboto-geo-upper;
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    bottom: 355px;
+    right: 167px;
+    background-color: rgba(29, 29, 29, 1);
+    text-align: center;
+    padding-top: 6px;
+    transition-duration: 0.6s;
+    opacity: 0.9;
+    display: none;
+}
+.vgegmav{
+	width: 165px;
+    height: 25px;
+    font-size: 12px;
+    font-family: roboto-geo-upper;
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    bottom: 355px;
+    right: 185px;
+    background-color: rgba(29, 29, 29, 1);
+     display: none; 
+    text-align: center;
+    padding-top: 7px;
+    transition-duration: 0.6s;
+    opacity: 0.9;
+}
+.animation_icon{
+	width: 32px;
+	height: 32px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.animation_icon:hover{
+	transition-duration: 0.5s;
+	background-color: #696969;
+}
+.icon_rcheulebi:hover + .rcheulebi{
+    display: block;
+    transition-duration: 0.6s;
+}
+.icon_vgegmav:hover + .vgegmav{
+    display: block;
+    transition-duration: 0.6s;
+}
+.icon_nanaxi:hover + .nanaxi{
+    display: block;
+    transition-duration: 0.6s;
+}
+.icon_gamowera:hover + .gamowera{
+    display: block;
+    transition-duration: 0.6s;
+}
+.icon_siashi:hover + .siashi_damateba{
+    display: block;
+    transition-duration: 0.6s;
+}
+.scrollbar{
+	width: 330px;
+	height: 212px;
+	background-color: #111;
+	display: flex;
+	flex-direction: column;
+	overflow: auto;
+}
+.languages{
+	display: flex;
+	width: 253px;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.language{
+	font-size: 13px;
+    color: #838383;
+    font-family: roboto-geo-upper,sans-serif;
+    text-transform: uppercase;
+}
+.date{
+	font-family: roboto-geo-upper,sans-serif;
+    text-transform: uppercase;
+    color: #838383;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+.date span {
+	color: #bbb;
+    margin-left: 5px;
+}
+.genre{
+	font-family: roboto-geo-upper,sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #bbb;
+}
+.genre a{
+	cursor: pointer;
+    color: #bbb;
+    padding: 4px 8px;
+    background-color: #363636;
+    -webkit-transition: background .2s;
+    -o-transition: background .2s;
+    -moz-transition: background .2s;
+    transition: background .2s;
+    margin: 1.5px;
+}
+.director{
+	font-size: 14px;
+    color: #bbb;
+    line-height: 1.1;
+    margin-top: 13px;
+}
+.director {
+	color: #fff;
+	font-family: roboto-geo-upper,sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #bbb;
+    line-height: 1.1;
+}
+.cast span{
+	line-height: 1.4;
+}
+.inner a{
+	color: #fff;
+}
+.cast{
+	font-family: roboto-geo-upper,sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #bbb;
+    line-height: 1.1;
+    margin-top: 6px;
+}
+.plot{
+	font-family: BPGingiriArial,sans-serif;
+	font-size: 15px;
+    color: #bbb;
+    margin-top: 15px;
+}
+.plot_content{
+	width: 300px;
+	line-height: 1.5;
+	margin-bottom: 1px;
+}
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #393939; 
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(29, 29, 29, 1); 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+.gaige_meti{
+	justify-content: flex-end;
+    width: 330px;
+    height: auto;
+    margin-top: 24px;
+    display: flex;;
+}
+.watch-btn{
+	font-family: roboto-geo-upper,sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: background .2s ease-in-out;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #b9b9b9;
+    padding: 5px 10px;
+}
+.gaige_meti a:hover{
+	background-color: #009c7c;
+	transition: 0.8;
+	border: none;
+}
+.genre a:hover{
+	opacity: 0.9;
+}
+@media(max-width: 768PX){
+	.scrollbar,.icon_gamowera,.icon_siashi,.year-duration,.poster,.ka_a{
+		display: none;
+	}
+	.trailer_list_items{
+		height: 231px;
+		background-color: initial;
+	}
+	.trailer_details_in{
+		background-color: initial;
+	}
+	.list_item_details{
+		height: 111px;
+	}
+	.animation_icons_in{
+		width: 149px;
+		height: 35px;
+		background-color: initial;
+	}
+	.animation_icons{
+		position: relative;
+    	right: 198px;
+    	bottom: 16px;
+    	background-color: initial;
+	}
+	.video{
+		position: relative;
+		top: 125px;
+	}
+	.video,.video_im{
+		width: 729px;
+		height: 351px;
+	}
+	.main{
+		flex-direction: column;
+		background-color: initial;
+		top: 0px;
+	}
+	.trailer_close{
+		position: relative;
+    	bottom: 288px;
+    	left: 184px;
+    	background-color: initial;
+	}
+	.trailer-rating{
+		top: 118px;
+    	right: 196px;
+    	position: relative;
+	}
+	.imdb-rating{
+		position: relative;
+    	left: 20px;
+	}
+	.en_a{
+		position: relative;
+    	bottom: 314px;
+    	right: 212px;
+	}
+	.gaige_meti{
+		left: 184px;
+    	bottom: 145px;
+    	position: relative;
+	}
+	.nanaxi{
+		left: 92px;
+    	bottom: 52px;
+	}
+	.rcheulebi{
+		left: -32px;
+    	bottom: 52px;
+	}
+	.vgegmav{
+		left: 3px;
+    	bottom: 52px;
+	}
+	/*.animation_icon{
+		width: 39px;
+		height: 39px;
+	}
+	.animation_icon svg{
+		width: 17px;
+		height: 19px;
+	}*/
+}
